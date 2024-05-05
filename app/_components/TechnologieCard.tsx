@@ -7,6 +7,7 @@ import {SpringBootIcon} from "@/app/icon/SpringBootIcon";
 import {ElasticSearchIcon} from "@/app/icon/ElasticSearchIcon";
 import {VueIcon} from "@/app/icon/VueIcon";
 import {JavaIcon} from "@/app/icon/JavaIcon";
+import {DockerIcon} from "@/app/icon/DockerIcon";
 
 export const TechnologieCard = ({technologie}: { technologie: Technologie }) => {
     const colorWord = (word: string) => {
@@ -30,6 +31,8 @@ export const TechnologieCard = ({technologie}: { technologie: Technologie }) => 
 
     const showIcon = (name: string) => {
         switch(name) {
+            case "Docker":
+                return <DockerIcon size={64}/>;
             case "React":
                 return <ReactIcon size={64}/>;
             case "Angular":

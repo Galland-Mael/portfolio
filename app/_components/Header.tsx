@@ -17,7 +17,7 @@ export const Header = () => {
                         À propos de moi
                     </Link>
                     <Link
-                        href={"#me"}
+                        href={"#technologies"}
                         className={"hover:text-primary text-xl"}>
                         Technologies
                     </Link>

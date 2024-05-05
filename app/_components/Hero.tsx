@@ -19,7 +19,7 @@ export const Hero = () => {
                     <span className="text-primary"> AXOPEN</span>
                 </p>
                 <Spacing size={"xl"}/>
-                <TitlePart title={"À propos de moi"}/>
+                <TitlePart id={"me"} title={"À propos de moi"}/>
                 <p>
                     Hello, moi c'est Maël 👋, je suis un jeune développeur informatique.
                     J'ai découvert cette passion pour le
