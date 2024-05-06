@@ -1,9 +1,10 @@
-import {Section} from "@/app/_components/Section";
+import {Section} from "@/app/_components/Shared/Section";
 import {cn} from "@/lib/utils";
-import {buttonVariants} from "@/components/ui/button";
+import {Button, buttonVariants} from "@/components/ui/button";
 import {GithubIcon} from "@/app/icon/GithubIcon";
 import Link from "next/link";
 import {LinkedinIcon} from "@/app/icon/LinkedinIcon";
+import {MailIcon} from "@/app/icon/MailIcon";
 
 export const Header = () => {
     return (
@@ -12,7 +13,7 @@ export const Header = () => {
                 <div className={"flex-1"}></div>
                 <ul className={"flex items-center gap-10 mr-5"}>
                     <Link
-                        href={"#me"}
+                        href={"#about-me"}
                         className={"hover:text-primary text-xl"}>
                         À propos de moi
                     </Link>
@@ -22,9 +23,14 @@ export const Header = () => {
                         Technologies
                     </Link>
                     <Link
-                        href={"#me"}
+                        href={"#projet"}
                         className={"hover:text-primary text-xl"}>
                         Projets
+                    </Link>
+                    <Link
+                        href={"#contact"}
+                        className={"hover:text-primary text-xl"}>
+                        Contact
                     </Link>
                     <ul className={"flex items-center gap-3"}>
                         <Link

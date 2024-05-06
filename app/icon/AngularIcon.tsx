@@ -7,7 +7,8 @@ export const AngularIcon = (props: ComponentPropsWithoutRef<"svg"> & {size?: num
             height={props.size}
             viewBox="0 0 256 271"
             version="1.1"
-            preserveAspectRatio="xMidYMid">
+            preserveAspectRatio="xMidYMid"
+            {...props}>
             <title>Angular</title>
             <defs>
                 <linearGradient x1="25.0714876%" y1="90.9292007%" x2="96.1321855%" y2="55.1837089%"

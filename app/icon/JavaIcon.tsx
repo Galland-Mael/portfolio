@@ -6,7 +6,8 @@ export const JavaIcon = (props: ComponentPropsWithoutRef<"svg"> & { size?: numbe
             width={props.size}
             height={props.size}
             viewBox="0 0 256 346" version="1.1"
-            preserveAspectRatio="xMidYMid">
+            preserveAspectRatio="xMidYMid"
+            {...props}>
             <g>
                 <path
                     d="M82.5539491,267.472524 C82.5539491,267.472524 69.35552,275.147869 91.9468218,277.745105 C119.315549,280.867375 133.303389,280.419607 163.463913,274.711273 C163.463913,274.711273 171.393396,279.683258 182.467491,283.989644 C114.855564,312.966982 29.4483782,282.311215 82.5539491,267.472524"

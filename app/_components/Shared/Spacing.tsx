@@ -1,4 +1,3 @@
-import css from "styled-jsx/css";
 import {cn} from "@/lib/utils";
 export type SpacingProps = {
      size?: "xxs" |"xs" | "sm" | "md" | "lg" | "xl" | "2xl" ;

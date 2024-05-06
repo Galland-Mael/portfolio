@@ -7,7 +7,8 @@ export const ElasticSearchIcon = (props: ComponentPropsWithoutRef<"svg"> & { siz
             height={props.size}
             viewBox="0 0 256 288"
             version="1.1"
-            preserveAspectRatio="xMidYMid">
+            preserveAspectRatio="xMidYMid"
+            {...props}>
             <title>Elasticsearch</title>
             <g>
                 <path

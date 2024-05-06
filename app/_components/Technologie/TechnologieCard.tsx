@@ -8,6 +8,7 @@ import {ElasticSearchIcon} from "@/app/icon/ElasticSearchIcon";
 import {VueIcon} from "@/app/icon/VueIcon";
 import {JavaIcon} from "@/app/icon/JavaIcon";
 import {DockerIcon} from "@/app/icon/DockerIcon";
+import {JavascriptAndTypeScriptIcon} from "@/app/icon/JavascriptAndTypeScriptIcon";
 
 export const TechnologieCard = ({technologie}: { technologie: Technologie }) => {
     const colorWord = (word: string) => {
@@ -31,6 +32,8 @@ export const TechnologieCard = ({technologie}: { technologie: Technologie }) => 
 
     const showIcon = (name: string) => {
         switch(name) {
+            case "JavaScript/TypeScript":
+                return <JavascriptAndTypeScriptIcon size={64} />
             case "Docker":
                 return <DockerIcon size={64}/>;
             case "React":
