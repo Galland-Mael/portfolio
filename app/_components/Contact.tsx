@@ -6,6 +6,7 @@ import {PhoneIcon} from "@/app/icon/PhoneIcon";
 import {GithubIcon} from "@/app/icon/GithubIcon";
 import {LinkedinIcon} from "@/app/icon/LinkedinIcon";
 import Link from "next/link";
+import {Spacing} from "@/app/_components/Shared/Spacing";
 
 export const Contact = () => {
     return (
@@ -33,6 +34,7 @@ export const Contact = () => {
                     </Link>
                 </div>
             </div>
+            <Spacing/>
         </Section>
 
     )
