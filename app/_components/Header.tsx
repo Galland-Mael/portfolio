@@ -1,15 +1,11 @@
-import {Section} from "@/app/_components/Shared/Section";
-import {cn} from "@/lib/utils";
-import {Button, buttonVariants} from "@/components/ui/button";
 import {GithubIcon} from "@/app/icon/GithubIcon";
 import Link from "next/link";
 import {LinkedinIcon} from "@/app/icon/LinkedinIcon";
-import {MailIcon} from "@/app/icon/MailIcon";
 
 export const Header = () => {
     return (
-        <header className="sticky top-0 py-4 bg-background">
-            <Section className={"flex items-center"}>
+        <header className="sticky top-0 py-4" style={{ background: 'hsl(var(--background))' }}>
+            <section className={"flex items-center max-w-5xl px-4 m-auto"}>
                 <div className={"flex-1"}></div>
                 <ul className={"flex items-center gap-10 mr-5"}>
                     <Link
@@ -35,17 +31,17 @@ export const Header = () => {
                     <ul className={"flex items-center gap-3"}>
                         <Link
                             href={"https://github.com/Galland-Mael"}
-                            className={cn(buttonVariants({variant: "outline"}), "size-10 p-0")}>
+                            className={"size-10 p-1.5 border-2 border-accent rounded-xl"}>
                             <GithubIcon size={24} className={"text-foreground"}/>
                         </Link>
                         <Link
                             href={"https://www.linkedin.com/in/mael-galland/"}
-                            className={cn(buttonVariants({variant: "outline"}), "size-10 p-0")}>
+                            className={"size-10 p-1.5 border-2 border-accent rounded-xl"}>
                             <LinkedinIcon size={24} className={"text-foreground"}/>
                         </Link>
                     </ul>
                 </ul>
-            </Section>
+            </section>
         </header>
     )
 }

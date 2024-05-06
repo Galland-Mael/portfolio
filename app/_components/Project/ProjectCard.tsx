@@ -2,10 +2,8 @@ import Image from "next/image";
 import {ProjectTitle} from "@/app/_components/Project/ProjectTitle";
 import {Spacing} from "@/app/_components/Shared/Spacing";
 import React, {ReactNode} from "react";
-import {cn} from "@/lib/utils";
 import Link from "next/link";
 import {GithubIcon} from "@/app/icon/GithubIcon";
-import {buttonVariants} from "@/components/ui/button";
 export interface Project {
     name: string
     description: ReactNode
@@ -54,7 +52,7 @@ export  const ProjectCard = (props: Project) => {
                     {showTechnologies}
                     <Link
                         href={props.gitLink}
-                        className={cn(buttonVariants({variant: "outline"}), "size-8 p-0")}>
+                        className={"size-10 p-1.5 border-2 border-accent rounded-xl"}>
                         <GithubIcon size={24} className={"text-foreground"}/>
                     </Link>
                 </div>

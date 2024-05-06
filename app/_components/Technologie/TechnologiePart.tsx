@@ -2,7 +2,6 @@
 import {Section} from "@/app/_components/Shared/Section";
 import {TitlePart} from "@/app/_components/Shared/TitlePart";
 import {TechnologieCard} from "@/app/_components/Technologie/TechnologieCard";
-import {Button} from "@/components/ui/button";
 import {Technologie} from "@/app/model/Technologie";
 import React, {useState} from "react";
 
@@ -41,7 +40,7 @@ export const TechnologiePart = () => {
             </div>
             {!showMore && (
                 <div className="w-full flex justify-center py-3">
-                    <Button className={"bg-accent"} variant={"outline"} onClick={handleShowMoreClick}>Voir plus</Button>
+                    <button className={"bg-accent p-2 rounded-xl"} onClick={handleShowMoreClick}>Voir plus</button>
                 </div>
             )}
         </Section>

@@ -25,9 +25,9 @@ export const TechnologieCard = ({technologie}: { technologie: Technologie }) => 
     };
 
     const showLearnFrom = technologie.learnFrom.map((word, index) => (
-        <span key={index} className={cn(colorWord(word), "mx-1")}>
-            {word}
-        </span>
+        <span key={index} className={`${colorWord(word)} mx-1`}>
+        {word}
+    </span>
     ));
 
     const showIcon = (name: string) => {

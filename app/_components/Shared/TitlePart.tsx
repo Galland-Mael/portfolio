@@ -1,6 +1,4 @@
 'use client';
-import {useRef} from "react";
-import {cn} from "@/lib/utils";
 
 interface TitleProps {
     title: string
@@ -9,7 +7,7 @@ interface TitleProps {
 
 export const TitlePart = (props: TitleProps) => {
     return (
-        <div  id={cn(props?.id)}>
+        <div  id={props?.id}>
             <div className="relative">
                 <h2 className={"text-4xl"}>{props.title}</h2>
                 <div className={"h-3 lg:h-6"}></div>

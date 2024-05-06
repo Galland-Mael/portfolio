@@ -6,8 +6,6 @@ import {PhoneIcon} from "@/app/icon/PhoneIcon";
 import {GithubIcon} from "@/app/icon/GithubIcon";
 import {LinkedinIcon} from "@/app/icon/LinkedinIcon";
 import Link from "next/link";
-import {cn} from "@/lib/utils";
-import {buttonVariants} from "@/components/ui/button";
 
 export const Contact = () => {
     return (
@@ -26,11 +24,11 @@ export const Contact = () => {
                 </div>
                 <div className="mt-4 md:ml-auto flex flex-row items-center">
                     <Link href={"https://github.com/Galland-Mael"}
-                          className={cn(buttonVariants({variant: "outline"}), "size-10 p-0 mx-3")}>
+                          className={"size-10 p-1.5 border-2 border-accent rounded-xl"}>
                         <GithubIcon size={24} className={"text-foreground"}/>
                     </Link>
                     <Link href={"https://www.linkedin.com/in/mael-galland/"}
-                          className={cn(buttonVariants({variant: "outline"}), "size-10 p-0 mx-3")}>
+                          className={"size-10 p-1.5 border-2 border-accent rounded-xl"}>
                         <LinkedinIcon size={24} className={"text-foreground"}/>
                     </Link>
                 </div>
