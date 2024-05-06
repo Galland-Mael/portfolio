@@ -8,7 +8,7 @@ export const ProjectTitle = (props: TitleProps) => {
     return (
         <div className="flex items-center">
             <span className="h-2 w-2 bg-primary rounded-full mr-2"></span>
-            <div className="relative">
+            <div>
                 <h2 className="text-4xl">{props.title}</h2>
             </div>
             <div className="h-3 lg:h-6"></div>

@@ -4,7 +4,7 @@ import {LinkedinIcon} from "@/app/icon/LinkedinIcon";
 
 export const Header = () => {
     return (
-        <header className="sticky top-0 py-4" style={{ background: 'hsl(var(--background))' }}>
+        <header className="sticky top-0 py-4" style={{ background: 'hsl(224 71.4% 4.1%)' }}>
             <section className={"flex items-center max-w-5xl px-4 m-auto"}>
                 <div className={"flex-1"}></div>
                 <ul className={"flex items-center gap-10 mr-5"}>
