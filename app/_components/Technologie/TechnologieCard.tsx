@@ -1,5 +1,4 @@
 import {Technologie} from "@/app/model/Technologie";
-import {cn} from "@/lib/utils";
 import {ReactIcon} from "@/app/icon/ReactIcon";
 import {AngularIcon} from "@/app/icon/AngularIcon";
 import React from "react";
