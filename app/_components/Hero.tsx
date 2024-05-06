@@ -22,7 +22,6 @@ export const Hero = () => {
                     Alternant développeur web full stack chez
                     <span className="text-primary"> AXOPEN</span>
                 </p>
-                <Spacing size={"xl"}/>
                 <TitlePart title={"À propos de moi"}/>
                 <p>
                     Hello, moi c&apos;est Maël 👋, je suis un jeune développeur informatique.
